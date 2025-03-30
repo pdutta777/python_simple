@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: python-simple-deployment
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: simple
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: simple-container
-        image: docker:latest
+        image: 594709136083.dkr.ecr.us-east-1.amazonaws.com/python/pythonfirst:latest
         ports:
         - containerPort: 8000
