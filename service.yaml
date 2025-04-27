@@ -10,7 +10,6 @@ spec:
     targetPort: 8000
     protocol: TCP
   selector:
-    matchLabels:
-      app: simple-app
+    app: simple-app
   type: LoadBalancer
   
