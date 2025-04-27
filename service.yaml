@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: simple-svc
   labels: 
-    simple-app
+    app: simple-app
 spec:
   ports:
   - port: 80
