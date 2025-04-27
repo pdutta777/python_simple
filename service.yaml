@@ -1,0 +1,16 @@
+apiVersion: v1 
+kind: Service 
+metadata:
+  name: simple-svc
+  labels: 
+    simple-app
+spec:
+  ports:
+  - port: 80
+    targetPort: 8000
+    protocol: TCP
+  selector:
+    matchLabels:
+      app: simple-app
+  type: LoadBalancer
+  
