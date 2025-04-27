@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: simple-container
-        image: 594709136083.dkr.ecr.us-east-1.amazonaws.com/python/pythonfirst:latest
+        image: DOCKER_IMAGE
         ports:
         - containerPort: 8000
         
